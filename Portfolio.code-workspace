@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/Gemfile": true,
+			"**/Gemfile.lock": true,
+			"**/.gitignore": true,
+			"**/_site": true,
+			"**/.sass-cache": true,
+		},
+	},
+}
