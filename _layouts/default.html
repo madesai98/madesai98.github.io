@@ -25,11 +25,35 @@
       }
     </script>
   
-    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  </head>  
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  </head>
 
   <body>
-    
+    <main role="main">
+        {% include intro.html %}
+        {% include projects.html %}
+        {% include contact.html %}
+    </main>
+
+    <script src="{{ "/assets/js/Triangular.min.js" | relative_url }}"></script>
+    <script>
+      new Triangular(document.getElementById("triangular"), {
+        widthMultiplier: 1.2,
+        heightMultiplier: 1.2,
+        horizontalDivisions: 10,
+        verticalDivisions: 7,
+        animationRangeX: 90,
+        animationRangeY: 30,
+        animationSpeed: 1500,
+        color1: [53, 92, 125],
+        color2: [192, 108, 132],
+        strokeModR: 1,
+        strokeModG: 1,
+        strokeModB: 1
+      });
+    </script>
+
   </body>
 
 </html>
