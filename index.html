@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Orion Demo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div id="canvas"></div>
+        <div class="vignette"></div>
+        <div class="content">
+            <svg id="circle" data-radius="125" data-linewidth="5"></svg>
+        </div>
+
+        <div id="0" class="page">
+            <h1 id="title" class="title">Mihir Desai</h1>
+
+            <h3 id="captions" class="captions load-down">
+                <span>Programmer</span>
+                <span>Designer</span>
+                <span>Photographer</span>
+                <span>Producer</span>
+            </h3>
+
+            <div class="nav-buttons">
+                <a class="nav-button" data-targetpage="1"><i class="fas fa-project-diagram" style="line-height: 51px;"></i><span>Projects</span></a>
+                <a class="nav-button" data-targetpage="2"><i class="fas fa-envelope"></i><span>Contact</span></a>
+            </div>
+        </div>
+
+        <div id="1" class="page">
+            <h1 id="title" class="title">My Projects</h1>
+
+            <div class="contact-buttons">
+                <a class="md-btn" data-targetmd="triangular"><i class="fas fa-shapes"></i><span>TriangularJS</span></a>
+                <a class="md-btn" data-targetmd="att"><i class="fas fa-robot"></i><span>AT&T Hackathon</span></a>
+                <a class="md-btn" data-targetmd="codeconnects"><i class="fas fa-graduation-cap"></i><span>CodeConnects</span></a>
+            </div>
+
+            <div class="nav-buttons">
+                <a class="nav-button" data-targetpage="2"><i class="fas fa-envelope"></i><span>Contact</span></a>
+                <a class="nav-button" data-targetpage="0"><i class="fas fa-home"></i><span>Home</span></a>
+            </div>
+        </div>
+
+        <div id="2" class="page">
+            <h1 id="title" class="title">Contact Me</h1>
+
+            <div class="contact-buttons">
+                <a href="https://www.linkedin.com/in/mihir-desai/" target="_blank"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a>
+                <a href="https://www.instagram.com/madesai98/" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                <a href="https://github.com/madesai98" target="_blank"><i class="fab fa-github-alt"></i><span>GitHub</span></a>
+            </div>
+
+            <div class="nav-buttons">
+                <a class="nav-button" data-targetpage="0"><i class="fas fa-home"></i><span>Home</span></a>
+                <a class="nav-button" data-targetpage="1"><i class="fas fa-project-diagram" style="line-height: 51px;"></i><span>Projects</span></a>
+            </div>
+        </div>
+
+        <div id="contact-info">
+            <span>+1 (818) 391 - 0801</span>
+            <span>mihirdevelopment@gmail.com</span>
+            <a href="CV.pdf" target="_blank" class="resume">CV</a>
+        </div>
+
+        <div id="triangular" class="close-modal modal-bg">
+            <div class="modal">
+                <h5>TriangularJS</h5>
+                <i class="close-modal fas fa-times"></i>
+                <a href="https://github.com/madesai98/TriangularJS" target="_blank">Go to Project</a>
+                <p>A small JavaScript plugin that uses HTML5 canvas to animate a background of triangles. The triangles are generated using Delaunay triangulation and the whole plugin is fully open source and customizable.</p>
+            </div>
+        </div>
+
+        <div id="att" class="close-modal modal-bg">
+            <div class="modal">
+                <h5>AT&T Hackathon</h5>
+                <i class="close-modal fas fa-times"></i>
+                <a href="https://developer.att.com/blog/2017-summit-challenge-winners" target="_blank">Go to Project</a>
+                <p>First place winner in the AT&T Developer Summit 2017 Hackathon Invitational. Our project was a robotic therapy glove used to assist patients with wrist mobility impairments. My job was to build and connect the app with the glove and assist in the engineering of the glove circuitry.</p>
+            </div>
+        </div>
+
+        <div id="codeconnects" class="close-modal modal-bg">
+            <div class="modal">
+                <h5>CodeConnects</h5>
+                <i class="close-modal fas fa-times"></i>
+                <a href="https://github.com/madesai98/CodeConnects-WebDev-Unit5" target="_blank">Go to Project</a>
+                <p>An assignment with CodeConnects where I am to develop the part of the curriculum for the web development course they are planning to offer. CodeConnects is an online school for underrepresented students in middle and high school.</p>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="bundle.js"></script>
+
+</html>
